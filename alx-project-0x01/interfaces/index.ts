@@ -18,7 +18,9 @@ export interface PostModalProps {
 }
 // interfaces/index.ts
 
-export interface UserData {
+// interfaces/index.ts
+
+export interface UserProps {
   id: number;
   name: string;
   username: string;
@@ -44,5 +46,5 @@ export interface UserData {
 
 export interface UserModalProps {
   onClose: () => void;
-  onSubmit: (user: UserData) => void;
+  onSubmit: (user: UserProps) => void;
 }
