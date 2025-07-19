@@ -1,9 +1,9 @@
-const Home: React.FC = () => {
+const UsersPage = () => {
   return (
-    <div className="flex justify-center items-center h-screen">
-      <h1 className="text-7xl font-thin">Welcome Page</h1>
+    <div className="p-4">
+      <h1 className="text-3xl font-bold">Users</h1>
     </div>
-  )
-}
+  );
+};
 
- export default Home;
+export default UsersPage;
