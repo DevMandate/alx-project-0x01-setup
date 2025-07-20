@@ -1,13 +1,13 @@
 import Header from "@/components/layout/Header";
 import { useState } from "react";
 import UserModal from "@/components/common/UserModal";
-import { UserData } from "@/interfaces";
+import { UserProps } from "@/interfaces"; 
 
 const UsersPage: React.FC = () => {
   const [isModalOpen, setModalOpen] = useState(false);
-  const [users, setUsers] = useState<UserData[]>([]);
+  const [users, setUsers] = useState<UserProps[]>([]); // ✅ changed
 
-  const handleAddUser = (newUser: UserData) => {
+  const handleAddUser = (newUser: UserProps) => { // ✅ changed
     setUsers((prev) => [...prev, newUser]);
     setModalOpen(false);
   };
